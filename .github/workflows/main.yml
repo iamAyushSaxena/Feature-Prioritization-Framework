@@ -1,0 +1,57 @@
+name: Feature Prioritization Pipeline
+
+# Trigger the workflow on push or pull request to the main branch
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Checkout the code from the repository
+    - name: Checkout content
+      uses: actions/checkout@v4
+
+    # 2. Set up Python 3.12 (Stable for Data Science)
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+        cache: 'pip' # Caching makes subsequent runs faster
+
+    # 3. Install dependencies
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        # Install pytest separately to ensure tests can run even if not in requirements.txt
+        pip install pytest 
+
+    # 4. Run Tests (Configured to look in the tests/ folder)
+    - name: Run Unit Tests
+      run: |
+        # Add 'src' to PYTHONPATH so tests can import your modules
+        export PYTHONPATH=$PYTHONPATH:$(pwd)/src
+        # Run pytest if the tests directory exists
+        if [ -d "tests" ]; then pytest tests/; else echo "No tests directory found, skipping"; fi
+
+    # 5. Execute the Main Pipeline Script
+    - name: Run Feature Prioritization Pipeline
+      run: |
+        python scripts/run_full_pipeline.py
+
+    # 6. Upload the generated outputs as Artifacts
+    # This allows you to download the reports and graphs from the GitHub UI
+    - name: Upload Analysis Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: prioritization-analysis-results
+        path: |
+          outputs/
+          data/processed/
+          data/synthetic/
+        retention-days: 90

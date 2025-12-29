@@ -1,0 +1,16 @@
+feature_name,category,description,reach_percentage,impact_level,confidence_level,effort_months,reach_users,impact_score,confidence_score,rice_score,rank
+Instant Checkout,Operational Efficiency,One-click checkout with saved preferences,70,High,High,1,350000,2,1,700000,1
+Contactless Delivery,User Experience,Leave at door option with photo confirmation,60,Medium,High,0.5,300000,1,1,600000,2
+Smart Reorder,Customer Retention,One-tap reorder of previous favorite orders with smart suggestions,65,High,High,2,325000,2,1,325000,3
+Schedule Orders,User Experience,Pre-schedule orders for future delivery times,40,High,High,1.5,200000,2,1,266666.6666666667,4
+Live Order Tracking,User Experience,Real-time GPS tracking with delivery partner photo,95,High,Medium,3,475000,2,0.8,253333.33333333334,5
+Personalized Homepage,Discovery & Exploration,ML-powered homepage based on order history and preferences,85,High,Medium,4,425000,2,0.8,170000,6
+Dynamic Pricing,Operational Efficiency,Surge pricing during peak hours to manage demand,100,High,Low,3,500000,2,0.5,166666.66666666666,7
+Dietary Filters,User Experience,Filter restaurants and dishes by dietary preferences,45,Medium,High,1.5,225000,1,1,150000,8
+Loyalty Gamification,Customer Retention,"Points, badges, and tier system to reward frequent users",80,Medium,High,3,400000,1,1,133333.33333333334,9
+Split Payment,User Experience,Allow multiple payment methods for single order,35,Medium,High,2,175000,1,1,87500,10
+Group Ordering,Order Value Increase,Allow multiple users to add items to shared cart for office/group orders,25,Massive,Medium,4,125000,3,0.8,75000,11
+Subscription Plans,Customer Retention,Monthly subscription for free delivery and exclusive discounts,30,Massive,Medium,5,150000,3,0.8,72000,12
+Social Sharing,Discovery & Exploration,Share favorite dishes and restaurants on social media,20,Low,High,1,100000,0.5,1,50000,13
+AI-Powered Search,Discovery & Exploration,Natural language search with contextual understanding,90,Medium,Low,6,450000,1,0.5,37500,14
+Restaurant Stories,Discovery & Exploration,Instagram-style stories showing daily specials and new items,50,Low,Low,2,250000,0.5,0.5,31250,15

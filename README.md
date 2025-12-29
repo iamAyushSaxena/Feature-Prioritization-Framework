@@ -1,4 +1,5 @@
 # 🚀 Feature Prioritization Framework with A/B Test Simulation
+![Executive Dashboard Preview](outputs/figures/dashboard_preview.png)
 
 ## 📋 Project Overview
 
@@ -321,3 +322,4 @@ For questions or issues:
 
 
 **⭐ If this project helped you, please star the repository!**
+

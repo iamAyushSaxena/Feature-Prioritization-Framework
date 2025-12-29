@@ -1,0 +1,16 @@
+feature_name,category,description,reach_percentage,impact_level,confidence_level,effort_months
+Smart Reorder,Customer Retention,One-tap reorder of previous favorite orders with smart suggestions,65,High,High,2
+Group Ordering,Order Value Increase,Allow multiple users to add items to shared cart for office/group orders,25,Massive,Medium,4
+Loyalty Gamification,Customer Retention,"Points, badges, and tier system to reward frequent users",80,Medium,High,3
+AI-Powered Search,Discovery & Exploration,Natural language search with contextual understanding,90,Medium,Low,6
+Schedule Orders,User Experience,Pre-schedule orders for future delivery times,40,High,High,1.5
+Live Order Tracking,User Experience,Real-time GPS tracking with delivery partner photo,95,High,Medium,3
+Restaurant Stories,Discovery & Exploration,Instagram-style stories showing daily specials and new items,50,Low,Low,2
+Split Payment,User Experience,Allow multiple payment methods for single order,35,Medium,High,2
+Subscription Plans,Customer Retention,Monthly subscription for free delivery and exclusive discounts,30,Massive,Medium,5
+Instant Checkout,Operational Efficiency,One-click checkout with saved preferences,70,High,High,1
+Personalized Homepage,Discovery & Exploration,ML-powered homepage based on order history and preferences,85,High,Medium,4
+Dietary Filters,User Experience,Filter restaurants and dishes by dietary preferences,45,Medium,High,1.5
+Social Sharing,Discovery & Exploration,Share favorite dishes and restaurants on social media,20,Low,High,1
+Contactless Delivery,User Experience,Leave at door option with photo confirmation,60,Medium,High,0.5
+Dynamic Pricing,Operational Efficiency,Surge pricing during peak hours to manage demand,100,High,Low,3
